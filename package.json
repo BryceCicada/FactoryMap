@@ -1,0 +1,31 @@
+{
+  "name": "factory-map",
+  "version": "1.0.0",
+  "description": "Extension of ECMAScript 6 Map to provide default values where no key exists.",
+  "keywords":["map", "default", "factory"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/BryceCicada/FactoryMap.git"
+  },
+  "homepage": "https://github.com/BryceCicada/FactoryMap",
+  "bugs": {
+    "url": "https://github.com/BryceCicada/FactoryMap/issues"
+  },
+  "main": "factorymap.js",
+  "scripts": {
+    "test": "grunt jshint && ./node_modules/.bin/nave use 6.2.2 ./node_modules/.bin/jenkins-mocha --cobertura test/*"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "grunt": "^1.0.1",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-jshint": "^1.0.0",
+    "jenkins-mocha": "^2.6.0",
+    "jshint-jenkins-checkstyle-reporter": "^0.1.2",
+    "jshint-stylish": "^2.2.0",
+    "nave": "^1.0.1"
+  }
+}
