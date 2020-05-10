@@ -16,7 +16,8 @@ export class FactoryMap<K, V> extends Map<K, V> {
         }
     }
 
-    public get(key: K, defaultValueFactory?: (k: K) => V) {
+    public get(key: K, defaultValueFactory?: (k: K) => V): V;
+    public get(key: K, defaultValueFactory?: (k: K) => V | undefined): V | undefined {
         let r = super.get(key);
         if (r === undefined) {
             if (defaultValueFactory) {
